@@ -21,8 +21,18 @@
 			</a>
 
 			<div class="relative border border-gray-500 ml-6 py-1 px-2 rounded">
-				<input id="search-input" type="search" placeholder="Rechercher..." class="outline-none" />
-				<div class="absolute top-[calc(100%+0.25rem)] left-0 w-full border p-1 rounded"></div>
+				<input id="search-input" type="search" placeholder="Rechercher..." class="peer outline-none" />
+				<div
+					class="opacity-0 scale-y-75 pointer-events-none peer-focus:opacity-100 peer-focus:scale-y-100 peer-focus:pointer-events-auto hover:opacity-100 hover:scale-y-100 hover:pointer-events-auto focus-within:opacity-100 focus-within:scale-y-100 focus-within:pointer-events-auto transition-all duration-300 origin-top absolute top-[calc(100%+0.25rem)] left-0 w-full border rounded bg-gray-50 shadow-sm">
+					<ul class="*:*:p-2 *:not-last:*:border-b *:*:cursor-pointer *:*:size-full *:*:text-left">
+						<li>
+							<button>Beute</button>
+						</li>
+						<li>
+							<button>Beurre</button>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 
