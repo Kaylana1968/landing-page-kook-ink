@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	height: 1000rem;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 5rem;
+	border-bottom: 1px solid lightgray;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: min-content;
+	border-right: 1px solid lightgray;
+	padding-right: 1rem;
+  text-decoration: none;
+}
+
+.home-link .image-container {
+	height: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+.home-link img {
+	height: 100%;
+	width: 100%;
+}
+
+.home-link span {
+  white-space: nowrap;
+  color: darkorange;
+	font-size: xx-large;
+}
