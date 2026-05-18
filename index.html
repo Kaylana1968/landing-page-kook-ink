@@ -1,23 +1,82 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth scroll-pt-12 sm:scroll-pt-20">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preload" href="style.css" as="style" />
-		<link rel="stylesheet" href="style.css" />
 		<link rel="preload" href="script.js" as="script" />
-		<link rel="stylesheet" href="script.js" />
 		<link rel="preload" href="images/logo.png" as="image" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="style.css" />
 		<title>Kook Ink</title>
 	</head>
-	<body>
-		<header>
-			<a href="#" class="home-link">
-				<div class="image-container">
-					<img src="images/logo.png" height="500" width="500" p />
+	<body class="text-xs sm:text-base">
+		<header
+			class="sticky flex items-center top-0 left-0 h-12 sm:h-20 bg-white border-b border-b-gray-300 shadow-md z-10">
+			<a href="#" class="flex items-center h-full w-min border-r border-r-gray-300 pr-3 sm:pr-4 select-none">
+				<div class="h-full aspect-square">
+					<img src="images/logo.png" height="500" width="500" />
 				</div>
-				<span> Kook Ink </span>
+				<span class="whitespace-nowrap text-orange-500 text-lg sm:text-3xl"> Kook Ink </span>
 			</a>
+
+			<div class="relative border border-gray-500 ml-6 py-1 px-2 rounded">
+				<input id="search-input" type="search" placeholder="Rechercher..." class="outline-none" />
+				<div class="absolute top-[calc(100%+0.25rem)] left-0 w-full border p-1 rounded"></div>
+			</div>
 		</header>
+
+		<main class="relative px-4 bg-gray-50 min-h-[calc(100dvh-3rem)] sm:min-h-[calc(100dvh-5rem)] flex">
+			<article class="pt-4">
+				<h1>Bienvenue sur le manuel de Kook Ink !</h1>
+
+				<section id="reminder">
+					<h2>C'est quoi Kook Ink ?</h2>
+					<p>
+						Kook Ink est un réseau social centré autour de la <i class="text-orange-500">cuisine</i>. <br />
+						Vous y trouverez des recettes de vos cuisiniers préférés, une communauté prête à donner des conseils et à
+						discuter du monde culinaire !
+					</p>
+				</section>
+
+				<section id="quick-search">
+					<h2>Navigation rapide</h2>
+					<ul class="list-disc pl-8">
+						<li>
+							<a href="home.html" class="underline text-blue-700 hover:text-blue-600 focus:text-blue-800">
+								Page d'accueil
+							</a>
+						</li>
+						<li>
+							<a href="recipe.html" class="underline text-blue-700 hover:text-blue-600 focus:text-blue-800">
+								Les recettes
+							</a>
+						</li>
+						<li>
+							<a href="post.html" class="underline text-blue-700 hover:text-blue-600 focus:text-blue-800">Les posts</a>
+						</li>
+						<li>
+							<a href="forum.html" class="underline text-blue-700 hover:text-blue-600 focus:text-blue-800">Le forum</a>
+						</li>
+						<li>
+							<a href="profile.html" class="underline text-blue-700 hover:text-blue-600 focus:text-blue-800">
+								Votre profil
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section id="download" class="pb-[100vh]">
+					<h2>Télécharger l'application</h2>
+					<p>
+						Kook Ink est un réseau social centré autour de la <i class="orange">cuisine</i>. <br />
+						Vous y trouverez des recettes de vos cuisiniers préférés, une communauté prête à donner des conseils et à
+						discuter du monde culinaire !
+					</p>
+				</section>
+			</article>
+		</main>
+
+		<script src="script.js"></script>
 	</body>
 </html>
