@@ -29,12 +29,8 @@ h2 {
 	color: var(--color-orange-500);
 }
 
-	/* @media screen and (max-width: 640px) {
-		h1 {
-			font-size: large;
-		}
-
-		h2 {
-			font-size: medium;
-		}
-	} */
+@media screen and (max-width: 640px) {
+	section {
+		margin: 1rem 0 1rem 0.5rem;
+	}
+}

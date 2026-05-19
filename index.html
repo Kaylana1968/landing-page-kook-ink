@@ -3,21 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<link rel="preload" href="style.css" as="style" />
 		<link rel="preload" href="script.js" as="script" />
 		<link rel="preload" href="images/logo.png" as="image" />
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="style.css" />
+
 		<title>Kook Ink</title>
 	</head>
+
 	<body>
 		<header
-			class="sticky flex items-center top-0 left-0 h-12 sm:h-20 bg-white border-b border-b-gray-300 shadow-md z-10">
-			<a href="#" class="flex items-center h-full w-min border-r border-r-gray-100 pr-3 sm:pr-4 select-none">
+			class="sticky flex items-center top-0 left-0 h-12 sm:h-20 bg-white border-b border-b-gray-300 shadow-md z-10"
+		>
+			<a href="index.html" class="flex items-center h-full w-min border-r border-r-gray-100 sm:pr-4 select-none">
 				<div class="h-full aspect-square">
 					<img src="images/logo.png" height="500" width="500" />
 				</div>
-				<span class="whitespace-nowrap text-orange-500 text-lg sm:text-3xl"> Kook Ink </span>
+				<span class="hidden sm:inline whitespace-nowrap text-orange-500 text-3xl"> Kook Ink </span>
 			</a>
 
 			<div class="relative border border-gray-500 ml-6 py-1 px-2 rounded">
@@ -26,9 +30,12 @@
 					type="search"
 					autocomplete="off"
 					placeholder="Rechercher..."
-					class="peer outline-none" />
+					class="peer outline-none"
+				/>
+
 				<div
-					class="opacity-0 scale-y-75 pointer-events-none peer-focus:opacity-100 peer-focus:scale-y-100 peer-focus:pointer-events-auto hover:opacity-100 hover:scale-y-100 hover:pointer-events-auto focus-within:opacity-100 focus-within:scale-y-100 focus-within:pointer-events-auto transition-all duration-300 origin-top absolute top-[calc(100%+0.25rem)] left-0 w-full border border-gray-500 rounded bg-gray-50 shadow-sm">
+					class="opacity-0 scale-y-75 pointer-events-none peer-focus:opacity-100 peer-focus:scale-y-100 peer-focus:pointer-events-auto hover:opacity-100 hover:scale-y-100 hover:pointer-events-auto focus-within:opacity-100 focus-within:scale-y-100 focus-within:pointer-events-auto transition-all duration-300 origin-top absolute top-[calc(100%+0.25rem)] left-0 w-full border border-gray-500 rounded bg-gray-50 shadow-sm"
+				>
 					<ul id="search-result">
 						<li class="p-2 flex items-center justify-center">
 							<svg
@@ -41,7 +48,8 @@
 								stroke-width="2"
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								class="lucide lucide-search-x-icon lucide-search-x">
+								class="lucide lucide-search-x-icon lucide-search-x"
+							>
 								<path d="m13.5 8.5-5 5" />
 								<path d="m8.5 8.5 5 5" />
 								<circle cx="11" cy="11" r="8" />
@@ -54,16 +62,14 @@
 			</div>
 		</header>
 
-		<main class="relative px-4 bg-gray-50 min-h-[calc(100dvh-3rem)] sm:min-h-[calc(100dvh-5rem)] flex">
+		<main class="relative px-2 sm:px-4 bg-gray-50 min-h-[calc(100dvh-3rem)] sm:min-h-[calc(100dvh-5rem)] flex">
 			<article class="pt-4 w-full">
 				<section>
 					<h1>Bienvenue sur le manuel de Kook Ink !</h1>
-					<p>
-						Vous pourrez trouver tout ce qu'il y a à savoir pour utiliser l'application Kook Ink.
-					</p>
+					<p>Vous pourrez trouver tout ce qu'il y a à savoir pour utiliser l'application Kook Ink.</p>
 				</section>
 
-				<hr class="text-gray-300 my-8">
+				<hr class="text-gray-300 my-8" />
 
 				<section id="reminder">
 					<h2>C'est quoi Kook Ink ?</h2>
@@ -78,23 +84,40 @@
 					<h2>Navigation rapide</h2>
 					<ul class="list-disc pl-8">
 						<li>
-							<a href="home.html" class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300">
+							<a
+								href="home.html"
+								class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300"
+							>
 								Page d'accueil
 							</a>
 						</li>
 						<li>
-							<a href="recipe.html" class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300">
+							<a
+								href="recipe.html"
+								class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300"
+							>
 								Les recettes
 							</a>
 						</li>
 						<li>
-							<a href="post.html" class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300">Les posts</a>
+							<a
+								href="post.html"
+								class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300"
+								>Les posts</a
+							>
 						</li>
 						<li>
-							<a href="forum.html" class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300">Le forum</a>
+							<a
+								href="forum.html"
+								class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300"
+								>Le forum</a
+							>
 						</li>
 						<li>
-							<a href="profile.html" class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300">
+							<a
+								href="profile.html"
+								class="underline text-orange-800 hover:text-orange-700 focus:text-orange-900 transition-colors duration-300"
+							>
 								Votre profil
 							</a>
 						</li>
