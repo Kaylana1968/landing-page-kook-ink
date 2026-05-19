@@ -47,7 +47,7 @@ function getFilteredElements(searchValue) {
 
 function getListElement({ label, link }) {
 	return `
-		<li class="not-last:*:border-b">
+		<li class="not-last:*:border-b *:border-b-gray-500">
 			<a href="${link}" class="block p-2 cursor-pointer size-full">
 				${label}
 			</a>
