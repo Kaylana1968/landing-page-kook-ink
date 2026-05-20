@@ -47,8 +47,8 @@ function getFilteredElements(searchValue) {
 
 function getListElement({ label, link }) {
 	return `
-		<li class="not-last:*:border-b *:border-b-gray-500">
-			<a href="${link}" class="block p-2 cursor-pointer size-full">
+		<li>
+			<a href="${link}" class="block p-2 cursor-pointer size-full hover:bg-gray-100 focus:bg-gray-200 rounded transition-colors">
 				${label}
 			</a>
 		</li>
