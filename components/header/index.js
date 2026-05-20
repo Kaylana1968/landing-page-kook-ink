@@ -5,8 +5,8 @@ class CustomHeader extends HTMLElement {
 		this.innerHTML = `
       <header class="sticky flex items-center top-0 left-0 h-12 sm:h-20 bg-white border-b border-b-gray-300 shadow-md z-10">
         <a href="index.html" class="flex items-center h-full w-min sm:pr-4 select-none">
-          <div class="h-full aspect-square">
-            <img src="images/logo.png" height="500" width="500" />
+          <div class="h-full aspect-square p-4">
+            <img src="images/logo.png" height="300" width="300" />
           </div>
           <span class="hidden sm:inline whitespace-nowrap text-orange-500 text-3xl"> Kook Ink </span>
         </a>
