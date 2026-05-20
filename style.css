@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 body {
 	font-family: Arial, sans-serif;
 }
@@ -22,6 +24,10 @@ section p {
 h1,
 h2 {
 	color: var(--color-orange-500);
+}
+
+*:not(:defined) {
+	visibility: hidden;
 }
 
 @media screen and (max-width: 640px) {
