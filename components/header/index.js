@@ -11,7 +11,7 @@ class CustomHeader extends HTMLElement {
           <span class="hidden sm:inline whitespace-nowrap text-orange-500 text-3xl"> Kook Ink </span>
         </a>
 
-        <div class="relative ml-auto mr-6 ">
+        <div class="relative mx-auto sm:ml-auto sm:mr-6">
           <input
             type="search"
             autocomplete="off"
@@ -27,6 +27,8 @@ class CustomHeader extends HTMLElement {
             </ul>
           </div>
         </div>
+
+        <div class="aspect-square h-full sm:hidden"></div>
       </header>
     `;
 

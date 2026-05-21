@@ -12,7 +12,6 @@ class NoResult extends HTMLElement {
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-search-x-icon lucide-search-x"
         >
           <path d="m13.5 8.5-5 5" />
           <path d="m8.5 8.5 5 5" />
