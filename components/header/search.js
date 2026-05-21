@@ -6,6 +6,10 @@ const searchElements = [
 	{
 		label: "Créer un post",
 		link: "post.html#create"
+	},
+	{
+		label: "Nous contacter",
+		link: "index.html#contact"
 	}
 ];
 
