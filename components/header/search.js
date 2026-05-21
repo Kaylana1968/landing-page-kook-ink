@@ -54,7 +54,7 @@ function onSearch(e, targetElement) {
 
 	targetElement.innerHTML =
 		filteredElements.length === 0
-			? "<no-result></no-result>"
+			? "<li><no-result></no-result></li>"
 			: filteredElements.slice(0, 5).map(getListElement).join(""); // limit of 5 elements
 }
 
