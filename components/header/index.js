@@ -17,6 +17,7 @@ class CustomHeader extends HTMLElement {
 
         <div class="relative mx-auto sm:ml-auto sm:mr-6">
           <input
+            id="search-input"
             type="search"
             autocomplete="off"
             placeholder="Rechercher..."

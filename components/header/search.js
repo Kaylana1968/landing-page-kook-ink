@@ -1,11 +1,27 @@
 const searchElements = [
 	{
+		label: "Visualiser une recette",
+		link: "recipe.html#view"
+	},
+	{
 		label: "Créer une recette",
 		link: "recipe.html#create"
 	},
 	{
+		label: "Sauvegarder une recette",
+		link: "recipe.html#save"
+	},
+	{
+		label: "Visualiser un post",
+		link: "post.html#view"
+	},
+	{
 		label: "Créer un post",
 		link: "post.html#create"
+	},
+	{
+		label: "Sauvegarder un post",
+		link: "post.html#save"
 	},
 	{
 		label: "Nous contacter",
@@ -41,7 +57,11 @@ function getFilteredElements(searchValue) {
 function getListElement({ label, link }) {
 	return `
 		<li>
-			<a href="${link}" class="block p-2 cursor-pointer size-full hover:bg-gray-100 focus:bg-gray-200 rounded transition-colors">
+			<a
+				href="${link}"
+				class="block p-2 cursor-pointer size-full hover:bg-gray-100 focus:bg-gray-200 rounded transition-colors"
+				onclick="document.getElementById('search-input').value = ''"
+			>
 				${label}
 			</a>
 		</li>
