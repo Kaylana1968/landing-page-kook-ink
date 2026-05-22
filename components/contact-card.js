@@ -6,10 +6,10 @@ class ContactCard extends HTMLElement {
 
 		this.innerHTML = `
       <div
-        class="flex items-center bg-gray-200/50 p-2 rounded-lg gap-2 sm:block sm:relative sm:text-center shadow-sm"
+        class="flex items-center bg-gray-200/50 p-2 rounded-lg gap-2 shadow-lg lg:block lg:relative lg:text-center"
       >
         <div
-          class="bg-gray-50 p-2 rounded-full text-orange-500 sm:absolute sm:top-0 sm:left-1/2 sm:-translate-1/2 sm:border-8 sm:border-gray-200/50 shadow-sm"
+          class="bg-gray-50 p-2 rounded-full text-orange-500 shadow-lg lg:absolute lg:top-0 lg:left-1/2 lg:-translate-1/2 lg:border-8 lg:border-gray-200/50"
         >
           ${icon}
         </div>
@@ -17,7 +17,7 @@ class ContactCard extends HTMLElement {
         <a
           target="_blank"
           href="${link}"
-          class="sm:block sm:mt-6"
+          class="lg:block lg:mt-6"
         >
           ${value}
         </a>

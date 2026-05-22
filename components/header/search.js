@@ -1,5 +1,13 @@
 const searchElements = [
 	{
+		label: "Télécharger l'application",
+		link: "index.html#download"
+	},
+	{
+		label: "Nous contacter",
+		link: "index.html#contact"
+	},
+	{
 		label: "Les recettes",
 		link: "recipe.html"
 	},
@@ -35,10 +43,6 @@ const searchElements = [
 		label: "Sauvegarder un post ou une recette",
 		link: "post-and-recipe.html#save"
 	},
-	{
-		label: "Nous contacter",
-		link: "index.html#contact"
-	}
 ];
 
 function normalize(string) {
