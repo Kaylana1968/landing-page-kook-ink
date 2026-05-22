@@ -12,7 +12,7 @@ const searchElements = [
 		link: "recipe.html"
 	},
 	{
-		label: "Visualiser une recette",
+		label: "Voir une recette",
 		link: "recipe.html#view"
 	},
 	{
@@ -24,7 +24,7 @@ const searchElements = [
 		link: "post.html"
 	},
 	{
-		label: "Visualiser un post",
+		label: "Voir un post",
 		link: "post.html#view"
 	},
 	{
@@ -43,6 +43,22 @@ const searchElements = [
 		label: "Sauvegarder un post ou une recette",
 		link: "post-and-recipe.html#save"
 	},
+	{
+		label: "Le forum",
+		link: "forum.html"
+	},
+	{
+		label: "Voir le forum",
+		link: "forum.html#view"
+	},
+	{
+		label: "Répondre à une question du forum",
+		link: "forum.html#ask"
+	},
+	{
+		label: "Poser une question sur le forum",
+		link: "forum.html#answer"
+	}
 ];
 
 function normalize(string) {
