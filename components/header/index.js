@@ -15,13 +15,13 @@ class CustomHeader extends HTMLElement {
           <span class="hidden sm:inline whitespace-nowrap text-orange-500 text-3xl"> Kook Ink </span>
         </a>
 
-        <div class="relative mx-auto sm:ml-auto sm:mr-6">
+        <div class="relative w-60 mx-auto sm:ml-auto sm:mr-6">
           <input
             id="search-input"
             type="search"
             autocomplete="off"
             placeholder="Rechercher..."
-            class="peer outline-none placeholder:text-gray-500 border border-gray-300 py-1 px-2 rounded-lg hover:border-gray-400 transition-colors"
+            class="peer w-full outline-none placeholder:text-gray-500 border border-gray-300 py-1 px-2 rounded-lg hover:border-gray-400 transition-colors"
           />
 
           <div

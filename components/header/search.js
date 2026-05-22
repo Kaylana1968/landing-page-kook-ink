@@ -1,5 +1,9 @@
 const searchElements = [
 	{
+		label: "Les recettes",
+		link: "recipe.html"
+	},
+	{
 		label: "Visualiser une recette",
 		link: "recipe.html#view"
 	},
@@ -8,8 +12,8 @@ const searchElements = [
 		link: "recipe.html#create"
 	},
 	{
-		label: "Sauvegarder une recette",
-		link: "recipe.html#save"
+		label: "Les posts",
+		link: "post.html"
 	},
 	{
 		label: "Visualiser un post",
@@ -20,8 +24,16 @@ const searchElements = [
 		link: "post.html#create"
 	},
 	{
-		label: "Sauvegarder un post",
-		link: "post.html#save"
+		label: "Complémentaire sur les posts et les recettes",
+		link: "post-and-recipe"
+	},
+	{
+		label: "Commenter un post ou une recette",
+		link: "post-and-recipe.html#comment"
+	},
+	{
+		label: "Sauvegarder un post ou une recette",
+		link: "post-and-recipe.html#save"
 	},
 	{
 		label: "Nous contacter",
@@ -59,9 +71,25 @@ function getListElement({ label, link }) {
 		<li>
 			<a
 				href="${link}"
-				class="block p-2 cursor-pointer size-full hover:bg-gray-100 focus:bg-gray-200 rounded transition-colors"
+				class="flex items-center gap-3 p-2 cursor-pointer size-full hover:bg-gray-100 focus:bg-gray-200 rounded transition-colors"
 				onclick="document.getElementById('search-input').value = ''"
 			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="shrink-0"
+				>
+					<path d="m21 21-4.34-4.34" />
+					<circle cx="11" cy="11" r="8" />
+				</svg>
+			
 				${label}
 			</a>
 		</li>
