@@ -12,10 +12,6 @@ const searchElements = [
 		link: "home.html"
 	},
 	{
-		label: "Voir la page d'accueil",
-		link: "home.html#view"
-	},
-	{
 		label: "Naviguer dans la page d'accueil",
 		link: "home.html#navigate"
 	},
@@ -60,10 +56,6 @@ const searchElements = [
 		link: "forum.html"
 	},
 	{
-		label: "Voir le forum",
-		link: "forum.html#view"
-	},
-	{
 		label: "Répondre à une question du forum",
 		link: "forum.html#ask"
 	},
@@ -76,16 +68,8 @@ const searchElements = [
 		link: "profile.html"
 	},
 	{
-		label: "Voir le profil",
-		link: "profile.html#view"
-	},
-	{
 		label: "Se connecter",
 		link: "login.html"
-	},
-	{
-		label: "Accéder au formulaire de connexion",
-		link: "login.html#view"
 	},
 	{
 		label: "Se déconnecter",
