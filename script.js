@@ -7,3 +7,19 @@ customElements.define("custom-header", CustomHeader);
 customElements.define("custom-main", CustomMain);
 customElements.define("no-result", NoResult);
 customElements.define("contact-card", ContactCard);
+
+window.addEventListener("load", () => {
+	const hash = window.location.hash;
+
+	if (hash) {
+		Promise.all([
+			customElements.whenDefined("custom-header"),
+			customElements.whenDefined("custom-main")
+		]).then(() => {
+			document.querySelector(hash)?.scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			});
+		});
+	}
+});

@@ -8,6 +8,18 @@ const searchElements = [
 		link: "index.html#contact"
 	},
 	{
+		label: "La page d'accueil",
+		link: "home.html"
+	},
+	{
+		label: "Voir la page d'accueil",
+		link: "home.html#view"
+	},
+	{
+		label: "Naviguer dans la page d'accueil",
+		link: "home.html#navigate"
+	},
+	{
 		label: "Les recettes",
 		link: "recipe.html"
 	},
@@ -58,7 +70,27 @@ const searchElements = [
 	{
 		label: "Poser une question sur le forum",
 		link: "forum.html#answer"
-	}
+	},
+	{
+		label: "Le profil",
+		link: "profile.html"
+	},
+	{
+		label: "Voir le profil",
+		link: "profile.html#view"
+	},
+	{
+		label: "Se connecter",
+		link: "login.html"
+	},
+	{
+		label: "Accéder au formulaire de connexion",
+		link: "login.html#view"
+	},
+	{
+		label: "Se déconnecter",
+		link: "login.html#logout"
+	},
 ];
 
 function normalize(string) {
