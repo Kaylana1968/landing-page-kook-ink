@@ -15,11 +15,11 @@ class FaqCard extends HTMLElement {
 		const collapseWrapper = document.createElement("div");
 		collapseWrapper.dataset.inactive = "";
 		collapseWrapper.className =
-			"grid transition-[grid-template-rows] duration-300 data-inactive:grid-rows-[0fr] grid-rows-[1fr]";
+			"group grid transition-[grid-template-rows] duration-300 data-inactive:grid-rows-[0fr] grid-rows-[1fr]";
 
 		const answerElement = document.createElement("div");
 		answerElement.className =
-			"overflow-hidden flex gap-2 border-t border-t-gray-200 p-2 before:content-['↳']";
+			"overflow-hidden flex gap-2 transition-[border,padding] border-t border-t-gray-200 p-2 group-data-inactive:py-0 group-data-inactive:border-t-0 before:content-['↳']";
 		answerElement.innerText = answer;
 
 		collapseWrapper.appendChild(answerElement);
