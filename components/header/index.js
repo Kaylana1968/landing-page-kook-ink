@@ -3,7 +3,7 @@ import onSearch from "./search.js";
 class CustomHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-      <header class="sticky flex items-center top-0 left-0 h-12 sm:h-20 bg-white border-b border-b-gray-300 shadow-md z-10">
+      <header class="sticky flex items-center top-0 left-0 h-12 sm:h-20 bg-white border-b border-b-gray-300 shadow-md z-30">
         <a
           href="index.html"
           class="flex items-center h-full w-min sm:pr-4 select-none"

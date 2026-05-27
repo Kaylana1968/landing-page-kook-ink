@@ -75,6 +75,14 @@ const searchElements = [
 		label: "Se déconnecter",
 		link: "login.html#logout"
 	},
+	{
+		label: "FAQ",
+		link: "faq.html"
+	},
+	{
+		label: "Les prix",
+		link: "pricing.html"
+	}
 ];
 
 function normalize(string) {
