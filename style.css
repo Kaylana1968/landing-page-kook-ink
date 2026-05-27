@@ -1,3 +1,11 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("fonts/Quicksand-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
 	font-family: Arial, sans-serif;
 }
@@ -24,7 +32,7 @@ article {
 	width: 100%;
 }
 
-article hr{
+article hr {
 	color: oklch(87.2% 0.01 258.338); /* gray-300 */
 	margin: 2rem 0;
 }
