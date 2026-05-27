@@ -10,7 +10,7 @@ class CustomHeader extends HTMLElement {
           aria-label="Aller à la page d'accueil"
         >
           <div class="h-full aspect-square p-2 sm:p-4">
-            <img src="images/logo.png" height="300" width="300" alt="Logo de Kook Ink" fetchpriority="high" />
+            <img src="images/logo.webp" height="100" width="100" alt="Logo de Kook Ink" fetchpriority="high" />
           </div>
           <span
             class="hidden sm:inline whitespace-nowrap text-orange-500 font-bold text-3xl"
